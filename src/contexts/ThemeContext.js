@@ -9,6 +9,7 @@ class ThemeContextProvider extends Component {
         dark: {syntax: '#ddd', ui:'#333', bg:'#555'}
     }
     //We can also share functions ezy pezy
+    //this.props.children represente the component's that ThemeContextProvider enveloppe
     toggleTheme = () => {
         this.setState({
             isLightTheme: !this.state.isLightTheme
